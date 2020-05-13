@@ -1,0 +1,57 @@
+export default [{
+		"attendance_id": 1,
+		"updated_at": "2020-04-25 02:46:36",
+		"id": 1,
+		"created_at": "2020-04-25 02:46:36",
+		"attendance_coupon": 0,
+		"nickname": "tinypuppet",
+		"num": 0,
+		"reward_days": 1,
+		"user_id": "1",
+		"date": "2020-04-25",
+		"attendance_point": 1,
+		"store_id": 1
+	},
+	{
+		"attendance_id": 1,
+		"updated_at": "2020-05-02 03:30:42",
+		"id": 2,
+		"created_at": "2020-05-02 03:30:42",
+		"attendance_coupon": 0,
+		"nickname": "tinypuppet",
+		"num": 0,
+		"reward_days": 1,
+		"user_id": "1",
+		"date": "2020-05-02",
+		"attendance_point": 1,
+		"store_id": 1
+	},
+	{
+		"attendance_id": 1,
+		"updated_at": "2020-05-03 19:37:12",
+		"id": 3,
+		"created_at": "2020-05-03 19:37:12",
+		"attendance_coupon": 0,
+		"nickname": "tinypuppet",
+		"num": 0,
+		"reward_days": 1,
+		"user_id": "1",
+		"date": "2020-05-03",
+		"attendance_point": 1,
+		"store_id": 1
+	},
+	{
+		"attendance_id": 1,
+		"updated_at": "2020-05-06 10:38:42",
+		"id": 4,
+		"created_at": "2020-05-06 10:38:42",
+		"attendance_coupon": 0,
+		"nickname": "tinypuppet",
+		"num": 0,
+		"reward_days": 1,
+		"user_id": "1",
+		"date": "2020-05-06",
+		"attendance_point": 1,
+		"store_id": 1
+	}
+]
