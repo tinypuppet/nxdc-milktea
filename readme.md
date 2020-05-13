@@ -28,3 +28,10 @@
 ### 个人说明
 ### 
 接触uniapp不到一个月，觉得uniapp挺不错的，便想着通过仿(shan)照(zhai)别人的小程序来学习uniapp，于是就有了这个项目。
+
+### 展示效果
+[首页](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_0.jpg?v=1589361485)
+[劵包](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_1.jpg?v=1589361485)
+[点餐](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_2.jpg?v=1589361485)
+[我的](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_3.jpg?v=1589361485)
+[取餐](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_4.jpg?v=1589361485)
