@@ -164,6 +164,14 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
 		}
+        ,{
+            "path" : "pages/review/review",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

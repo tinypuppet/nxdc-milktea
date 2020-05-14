@@ -35,7 +35,7 @@
 								<button type="primary" plain size="mini" v-else>开发票</button>
 							</view>
 							<view>
-								<button type="primary" plain size="mini">去评价</button>
+								<button type="primary" plain size="mini" @tap.stop="review(item)">去评价</button>
 							</view>
 						</view>
 					</view>
@@ -102,6 +102,12 @@
 			detail(id) {
 				uni.navigateTo({
 					url: '/pages/orders/detail?id=' + id
+				})
+			},
+			review(order) {
+				const date = order.completed_time.split(' ')[0]
+				uni.navigateTo({
+					url: '/pages/review/review?storename=' + order.store.name + '&typeCate=' + order.typeCate + '&date=' + date
 				})
 			}
 		}

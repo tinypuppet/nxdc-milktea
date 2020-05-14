@@ -114,7 +114,7 @@
 		</view>
 		<view class="btn-box">
 			<view class="item" v-if="order.invoice_status > 0"><button type="primary">查看发票</button></view>
-			<view class="item"><button type="primary" plain>去评价</button></view>
+			<view class="item"><button type="primary" plain @tap="review">去评价</button></view>
 			<view class="item"><button type="primary">再来一单</button></view>
 		</view>
 	</view>
@@ -135,6 +135,14 @@ export default {
 	},
 	onLoad({ id }) {
 		this.order = Orders.find(item => item.id == id);
+	},
+	methods: {
+		review() {
+			const date = this.order.completed_time.split(' ')[0]
+			uni.navigateTo({
+				url: '/pages/review/review?storename=' + this.order.store.name + '&typeCate=' + this.order.typeCate + '&date=' + date
+			})
+		}
 	}
 };
 </script>
