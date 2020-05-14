@@ -68,18 +68,21 @@
 					uni.showModal({
 						title: '提示',
 						content: '您取消了授权登录，请重新授权',
-						showCancel: false,
-						success: function (res) {
-						}
+						showCancel: false
 					})
+					
+					//没有授权登录就用默认的用户信息
+					this.SET_MEMBER(Member)
+					uni.navigateBack()
+					
 					return
+				} else {
+					const {avatarUrl: avatar, city, country, gender, nickName: nickname, province} = userInfo
+					const member = Object.assign(Member, {avatar, city, country, gender, nickname, province})
+					this.SET_MEMBER(member)
+					
+					uni.navigateBack()
 				}
-				
-				const {avatarUrl: avatar, city, country, gender, nickName: nickname, province} = userInfo
-				const member = Object.assign(Member, {avatar, city, country, gender, nickname, province})
-				this.SET_MEMBER(member)
-				
-				uni.navigateBack()
 			},
 			login() {
 				this.SET_MEMBER(Member)
