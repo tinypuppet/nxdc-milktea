@@ -172,6 +172,14 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
         }
+        ,{
+            "path" : "pages/activities/invite",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -305,6 +305,10 @@ button {
 	width: 80% !important;
 }
 
+.w-90 {
+	width: 90% !important;
+}
+
 .w-100 {
 	width: 100% !important;
 }
@@ -335,6 +339,10 @@ button {
 
 .rounded-pill {
 	border-radius: 50rem !important;
+}
+
+.border-radius-base {
+	border-radius: $border-radius-base;
 }
 
 .pre-line {

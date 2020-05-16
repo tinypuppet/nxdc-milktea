@@ -48,7 +48,7 @@
 					</view>
 				</view>
 				<view class="right">
-					<view class="tea-activity">
+					<view class="tea-activity" @tap="invite">
 						<image src="/static/images/index/mcsb.png" class="mark-img"></image>
 						<view>买茶送包</view>
 						<view class="right-img">
@@ -129,6 +129,11 @@
 				}
 				uni.navigateTo({
 					url: '/pages/mine/member-code'
+				})
+			},
+			invite() {
+				uni.navigateTo({
+					url: '/pages/activities/invite'
 				})
 			}
 		}
