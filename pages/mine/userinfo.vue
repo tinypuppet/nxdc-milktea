@@ -100,6 +100,8 @@
 				this.member.birthday = e.target.value
 			},
 			save() {
+				const member = Object.assign(this.$store.state.member, this.member)
+				this.$store.commit('SET_MEMBER', member)
 				uni.navigateBack()
 			}
 		}

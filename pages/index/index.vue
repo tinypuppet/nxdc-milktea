@@ -205,7 +205,7 @@ page {
 			content: '';
 			position: absolute;
 			width: 1rpx;
-			background-color: $text-color-assist;
+			background-color: #ddd;
 			right: 0;
 			height: 100%;
 			transform: scaleX(0.5) scaleY(0.8);
