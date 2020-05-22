@@ -20,10 +20,10 @@
 							<view>{{ member.memberLevel }}</view>
 						</view>
 					</view>
-					<view class="d-flex flex-column flex-fill" style="margin-top: 20rpx;">
+					<view class="d-flex flex-column flex-fill overflow-hidden" style="margin-top: 20rpx;">
 						<view v-if="isLogin" class="font-size-lg font-weight-bold d-flex justify-content-start align-items-center"
 							@tap="userinfo">
-							<view>{{ member.nickname }}</view>
+							<view class="text-truncate">{{ member.nickname }}</view>
 							<view class="iconfont iconarrow-right line-height-100"></view>
 						</view>
 						<view v-else class="font-size-lg font-weight-bold" @tap="login">请点击授权登录</view>
@@ -34,7 +34,7 @@
 							 <progress percent="0" activeColor="#ADB838" height="8rpx" :percent="growthValue" border-radius="8rpx"/>
 						</view>
 					</view>
-					<view class="level-benefit d-flex align-items-center justify-content-end text-color-white bg-warning font-size-sm">
+					<view class="level-benefit d-flex flex-shrink-0 align-items-center justify-content-end text-color-white bg-warning font-size-sm">
 						<view>会员权益</view>
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view>
@@ -115,10 +115,6 @@
 					<image src="/static/images/mine/stxy.png"></image>
 					<view>送她心愿</view>
 				</view>
-<!-- 				<view class="grid">
-					<image src="/static/images/mine/nxlw.png"></image>
-					<view>奈雪礼物</view>
-				</view> -->
 				<view class="grid">
 					<image src="/static/images/mine/nxsc.png"></image>
 					<view>奈雪商城</view>
@@ -412,8 +408,8 @@ page {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		color: $text-color-base;
-		font-size: $font-size-base;
+		color: $text-color-assist;
+		font-size: $font-size-sm;
 		padding-bottom: -40rpx;
 		
 		.grid {
