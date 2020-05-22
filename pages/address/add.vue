@@ -64,8 +64,7 @@
 		async onLoad({id}) {
 			//为了方便演示，这里用本地缓存
 			if(id) {
-				const addresses = uni.getStorageSync('addresses')
-				this.form = addresses.find(item => item.id == id)
+				this.form = this.$store.state.addresses.find(item => item.id == id)
 			}
 		},
 		methods: {

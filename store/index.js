@@ -28,6 +28,9 @@ const store = new Vuex.Store({
 		SET_ADDRESS(state, address) {
 			state.address = address
 		},
+		SET_ADDRESSES(state, addresses) {
+			state.addresses = addresses
+		},
 		SET_STORE(state, store) {
 			state.store = store
 		},
