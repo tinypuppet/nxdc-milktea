@@ -33,7 +33,7 @@
 
 2. 所有数据都是静态的，保存在api文件夹下。
 
-> 特别说明：本项目中的展示图片归奈雪所有。
+> ### 特别说明：本项目中的展示图片归奈雪所有。
 
 ### 展示效果
 ![首页](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_0.jpg?v=1589361485)
