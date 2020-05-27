@@ -1,3 +1,5 @@
+**特别声明：本项目中的展示图片归奈雪の茶所有。**
+
 ### 简介
 
 一套仿奈雪の茶小程序的项目模板。
@@ -6,7 +8,7 @@
 
 ### 个人说明
 
-如有问题，请联系 QQ 327722714 或 邮箱 tinypuppet@163.com。
+如有问题，请联系QQ或微信``327722714``。
 
 ### 说明
 
@@ -33,11 +35,8 @@
 
 2. 所有数据都是静态的，保存在api文件夹下。
 
-> ### 特别说明：本项目中的展示图片归奈雪所有。
-
 ### 展示效果
-![首页](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_0.jpg?v=1589361485)
-![劵包](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_1.jpg?v=1589361485)
-![点餐](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_2.jpg?v=1589361485)
-![我的](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_3.jpg?v=1589361485)
-![取餐](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_4.jpg?v=1589361485)
+
+|首页|点餐|饮品详情|我的|取餐|
+|---|---|---|---|---|
+|![](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_0.jpg?v=1590130842)|![](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_1.jpg?v=1590130842)|![](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_2.jpg?v=1590130842)|![](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_3.jpg?v=1590130842)|![](https://img.cdn.aliyun.dcloud.net.cn/stream/plugin_screens/fafaa180-94f3-11ea-9423-8760f636375f_4.jpg?v=1590130842)|
