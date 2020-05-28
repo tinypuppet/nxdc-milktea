@@ -180,6 +180,14 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
         }
+        ,{
+            "path" : "pages/services/services",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -135,7 +135,7 @@
 					<image src="/static/images/mine/shdz.png"></image>
 					<view>收货地址</view>
 				</view>
-				<view class="grid">
+				<view class="grid" @tap="services">
 					<image src="/static/images/mine/gdfw.png"></image>
 					<view>更多服务</view>
 				</view>
@@ -253,6 +253,11 @@
 				}
 				uni.navigateTo({
 					url: '/pages/mine/userinfo'
+				})
+			},
+			services() {
+				uni.navigateTo({
+					url: '/pages/services/services'
 				})
 			}
 		}
