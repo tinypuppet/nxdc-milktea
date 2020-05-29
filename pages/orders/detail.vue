@@ -107,7 +107,7 @@
 			<view class="position-relative w-100">
 				<image src="/static/images/order/bottom.png" mode="widthFix" class="w-100"></image>
 				<view class="invote-box" v-if="!order.invoice_status">
-					<view class="font-size-base text-color-primary">去开发票</view>
+					<view class="font-size-base text-color-primary" @tap="goToInvoice">去开发票</view>
 					<image src="/static/images/order/right.png"></image>
 				</view>
 			</view>
@@ -141,6 +141,11 @@ export default {
 			const date = this.order.completed_time.split(' ')[0]
 			uni.navigateTo({
 				url: '/pages/review/review?storename=' + this.order.store.name + '&typeCate=' + this.order.typeCate + '&date=' + date
+			})
+		},
+		goToInvoice() {
+			uni.navigateTo({
+				url: '/pages/invoice/invoice'
 			})
 		}
 	}

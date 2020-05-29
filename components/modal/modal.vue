@@ -98,11 +98,6 @@
 				type: Boolean,
 				default: true
 			},
-			//自定义弹窗内容
-			custom: {
-				type: Boolean,
-				default: false
-			},
 			//淡入效果，自定义弹框插入input输入框时传true
 			fadein: {
 				type: Boolean,

@@ -32,7 +32,7 @@
 						<view class="d-flex align-items-center justify-content-end">
 							<view style="margin-right: 10rpx;">
 								<button type="primary" plain size="mini" v-if="item.invoice_status > 0">查看发票</button>
-								<button type="primary" plain size="mini" v-else>开发票</button>
+								<button type="primary" plain size="mini" v-else @tap.stop="goToInvoice">开发票</button>
 							</view>
 							<view>
 								<button type="primary" plain size="mini" @tap.stop="review(item)">去评价</button>
@@ -108,6 +108,11 @@
 				const date = order.completed_time.split(' ')[0]
 				uni.navigateTo({
 					url: '/pages/review/review?storename=' + order.store.name + '&typeCate=' + order.typeCate + '&date=' + date
+				})
+			},
+			goToInvoice() {
+				uni.navigateTo({
+					url: '/pages/invoice/invoice'
 				})
 			}
 		}

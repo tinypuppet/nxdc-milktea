@@ -188,6 +188,14 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
         }
+        ,{
+            "path" : "pages/invoice/invoice",
+            "style" : {
+				"navigationBarTitleText": "奈雪の茶",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -36,10 +36,17 @@ button {
 		&[plain] {
 			color: $color-primary;
 			border: 1rpx solid $color-primary;
+			
+			&.button-hover {
+				color: rgba($color: $color-primary, $alpha: 0.5);
+				border: 1rpx solid rgba($color: $color-primary, $alpha: 0.5);
+			}
 		}
+		
 		&.button-hover {
 			background-color: #d5da91;
 		}
+		
 		&::after {
 			border: 0;
 		}
@@ -49,6 +56,11 @@ button {
 		&[plain] {
 			color: $text-color-assist;
 			border: 1rpx solid $text-color-assist;
+			
+			&.button-hover {
+				color: rgba($color: $text-color-assist, $alpha: 0.5);
+				border: 1rpx solid rgba($color: $text-color-assist, $alpha: 0.5);
+			}
 		}
 	}
 }
