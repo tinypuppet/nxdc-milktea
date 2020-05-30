@@ -196,6 +196,14 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
         }
+        ,{
+            "path" : "pages/services/help-center",
+            "style" : {
+				"navigationBarTitleText": "帮助中心",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

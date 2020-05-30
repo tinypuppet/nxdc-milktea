@@ -1,23 +1,30 @@
 <template>
 	<view class="container">
-		<view class="cell" @tap="helpCenter">
+		<view class="cell">
 			<view class="content">
-				<image src="/static/images/services/bzzx.png" class="icon"></image>
-				<view>帮助中心</view>
+				<image src="/static/images/services/djsm.png" class="icon"></image>
+				<view>等级说明</view>
 			</view>
 			<image src="/static/images/navigator-1.png" class="navigator"></image>
 		</view>
 		<view class="cell">
 			<view class="content">
-				<image src="/static/images/services/gynx.png" class="icon"></image>
-				<view>关于奈雪</view>
+				<image src="/static/images/services/hyxy.png" class="icon"></image>
+				<view>会员协议</view>
 			</view>
 			<image src="/static/images/navigator-1.png" class="navigator"></image>			
 		</view>
 		<view class="cell">
 			<view class="content">
-				<image src="/static/images/services/wdzl.png" class="icon"></image>
-				<view>奈雪礼物</view>
+				<image src="/static/images/services/ystk.png" class="icon"></image>
+				<view>隐私条款</view>
+			</view>
+			<image src="/static/images/navigator-1.png" class="navigator"></image>			
+		</view>
+		<view class="cell">
+			<view class="content">
+				<image src="/static/images/services/cjwt.png" class="icon"></image>
+				<view>常见问题</view>
 			</view>
 			<image src="/static/images/navigator-1.png" class="navigator"></image>			
 		</view>
@@ -30,18 +37,11 @@
 			return {
 				
 			}
-		},
-		methods: {
-			helpCenter() {
-				uni.navigateTo({
-					url: '/pages/services/help-center'
-				})
-			}
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	page {
 		background-color: #FFFFFF;
 	}
