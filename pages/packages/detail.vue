@@ -115,8 +115,31 @@ export default {
 .coupon {
 	border-radius: 6rpx;
 	padding: 20rpx 40rpx; 
-	margin-bottom:40rpx; 
-	box-shadow: 0 0 20rpx rgba(88, 88, 88, 0.1);
+	margin-bottom: 40rpx;
+	box-shadow: $box-shadow;
+	position: relative;
+	
+	&::before {
+		content: " ";
+		position: absolute;
+		background-color: $bg-color;
+		width: 30rpx;
+		height: 30rpx;
+		bottom: 70rpx;
+		left: -15rpx;
+		border-radius: 100%;
+	}
+	
+	&::after {
+		content: " ";
+		position: absolute;
+		background-color: $bg-color;
+		width: 30rpx;
+		height: 30rpx;
+		bottom: 70rpx;
+		right: -15rpx;
+		border-radius: 100%;
+	}
 	
 	.bottom {
 		height: 70rpx;
