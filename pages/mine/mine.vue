@@ -108,35 +108,52 @@
 			<view class="font-size-lg text-color-base font-weight-bold" style="margin-bottom: 20rpx;">我的服务</view>
 			<view class="row">
 				<view class="grid" @tap="attendance">
-					<image src="/static/images/mine/jfqd.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/jfqd.png"></image>
+					</view>
 					<view>积分签到</view>
 				</view>
 				<view class="grid">
-					<image src="/static/images/mine/stxy.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/stxy.png"></image>
+						<view class="badge">NEW</view>
+					</view>
 					<view>送她心愿</view>
 				</view>
 				<view class="grid">
-					<image src="/static/images/mine/nxsc.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/nxsc.png"></image>
+					</view>
 					<view>奈雪商城</view>
 				</view>
 				<view class="grid">
-					<image src="/static/images/mine/lxkf.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/lxkf.png"></image>
+					</view>
 					<view>联系客服</view>
 				</view>
 				<view class="grid" @tap="orders">
-					<image src="/static/images/mine/wddd.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/wddd.png"></image>
+					</view>
 					<view>我的订单</view>
 				</view>
 				<view class="grid" @tap="userinfo">
-					<image src="/static/images/mine/wdzl.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/wdzl.png"></image>
+					</view>
 					<view>我的资料</view>
 				</view>
 				<view class="grid" @tap="addresses">
-					<image src="/static/images/mine/shdz.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/shdz.png"></image>
+					</view>
 					<view>收货地址</view>
 				</view>
 				<view class="grid" @tap="services">
-					<image src="/static/images/mine/gdfw.png"></image>
+					<view class="image">
+						<image src="/static/images/mine/gdfw.png"></image>
+					</view>
 					<view>更多服务</view>
 				</view>
 			</view>
@@ -425,10 +442,28 @@ page {
 			margin-bottom: 40rpx;
 			width: 25%;
 			
-			image {
-				width: 80rpx;
-				height: 80rpx;
-				margin-bottom: 20rpx;
+			.image {
+				position: relative;
+				
+				image {
+					width: 80rpx;
+					height: 80rpx;
+					margin-bottom: 20rpx;
+				}
+				
+				.badge {
+					position: absolute;
+					top: 0;
+					right: 0;
+					background-color: #F04B4B;
+					color: #FFFFFF;
+					font-size: 14rpx;
+					width: 1rem;
+					height: 1rem;
+					line-height: 1rem;
+					text-align: center;
+					border-radius: 100% 100% 100% 0;
+				}
 			}
 		}
 	}
