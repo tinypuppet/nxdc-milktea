@@ -354,7 +354,7 @@ page {
 	
 	.yzclh-img {
 		height: 122.96rpx;
-		width: calc(173 / 99 * 122.96rpx);
+		width: 214.86rpx;
 	}
 }
 
