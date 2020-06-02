@@ -1,6 +1,5 @@
 /* #ifdef H5 */
 page {
-	height: auto;
 	min-height: 100%;
 }
 /* #endif */
@@ -99,11 +98,14 @@ page {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .nav {
 	width: 100%;
 	height: 212rpx;
+	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
 	
@@ -214,11 +216,9 @@ page {
 }
 
 .content {
+	flex: 1;
+	overflow: hidden;
 	width: 100%;
-	height: calc(100vh - 212rpx);
-	/* #ifdef H5 */
-	height: calc(100vh - 212rpx - 188rpx);
-	/* #endif */
 	display: flex;
 
 	.menus {
@@ -226,11 +226,11 @@ page {
 		height: 100%;
 		overflow: hidden;
 		background-color: $bg-color-grey;
-
+		
 		.wrapper {
 			width: 100%;
 			height: 100%;
-
+			
 			.menu {
 				display: flex;
 				align-items: center;
@@ -239,7 +239,11 @@ page {
 				font-size: 26rpx;
 				color: $text-color-assist;
 				position: relative;
-
+				
+				&:nth-last-child(1) {
+					margin-bottom: 130rpx;
+				}
+				
 				&.current {
 					background-color: #ffffff;
 					color: $text-color-base;
@@ -286,7 +290,8 @@ page {
 			.list {
 				width: 100%;
 				font-size: $font-size-base;
-
+				padding-bottom: 130rpx;
+				
 				.category {
 					width: 100%;
 

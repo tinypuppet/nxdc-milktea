@@ -65,6 +65,18 @@ button {
 	}
 }
 
+uni-toast {
+	z-index: 10002;
+}
+
+.uni-mask {
+	z-index: 10000;
+}
+
+uni-modal, uni-modal .uni-modal {
+	z-index: 10001;
+}
+
 .bg-base {
 	background-color: $bg-color;
 }
