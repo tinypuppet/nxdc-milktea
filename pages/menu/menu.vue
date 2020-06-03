@@ -362,7 +362,7 @@ export default {
 		handleAddToCart(cate, good, num) {	//添加到购物车
 			const index = this.cart.findIndex(item => {
 				if(good.use_property) {
-					return (item.id === good.id) && (item.props === good.props)
+					return (item.id === good.id) && (item.props_text === good.props_text)
 				} else {
 					return item.id === good.id
 				}
@@ -378,8 +378,8 @@ export default {
 					number: num,
 					image: good.images,
 					use_property: good.use_property,
-					props_text: good.use_property ? this.getGoodSelectedProps(good) : '',
-					props: good.use_property ? this.getGoodSelectedProps(good, 'ids') : []
+					props_text: good.props_text,
+					props: good.props
 				})
 			}
 		},
@@ -427,7 +427,8 @@ export default {
 			this.good.number -= 1
 		},
 		handleAddToCartInModal() {
-			this.handleAddToCart(this.category, this.good, this.good.number)
+			const product = Object.assign({}, this.good, {props_text: this.getGoodSelectedProps(this.good), props: this.getGoodSelectedProps(this.good, 'id')})
+			this.handleAddToCart(this.category, product, this.good.number)
 			this.closeGoodDetailModal()
 		},
 		openCartPopup() {	//打开/关闭购物车列表popup

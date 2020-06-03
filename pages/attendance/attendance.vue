@@ -22,7 +22,7 @@
 				<button type="primary" class="btn" @tap="attendance">签到</button>
 			</view>
 			<!-- 为了方便演示，这里设置了startDate和enddate属性 -->
-			<uni-calendar :show-month="false" start-date="2020-05-01" end-date="2020-05-31" 
+			<uni-calendar :show-month="false" :start-date="startDate" 
 						  :selected="attendanceList"
 						  :continuous="todayAttendance.attendance_continuity_day">
 			</uni-calendar>
@@ -61,13 +61,19 @@
 				customPoints: {},
 				attendanceModalVisible: false,
 				attendanceList: [],
-				todayAttendance: {}
+				todayAttendance: {},
+				startDate: '',
+				endDate: ''
 			}
 		},
 		async onLoad() {
 			this.customPoints = await this.$api('customPoints'),
 			this.attendanceList = await this.$api('attendanceList')
 			this.todayAttendance = await this.$api('todayAttendance')
+			const date = new Date()
+			let year = date.getFullYear()
+			let month = date.getMonth()
+			this.startDate = `${year}-${month}-01`
 		},
 		computed: {
 			...mapState(['member'])

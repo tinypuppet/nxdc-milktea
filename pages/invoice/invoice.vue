@@ -21,8 +21,8 @@
 					<view class="label">发票抬头</view>
 					<view class="flex">
 						<view class="radio-group">
-							<view class="radio mr-20" :class="{'checked': !form.taitou}" @tap="form.taitou=1">个人</view>
-							<view class="radio" :class="{'checked': form.taitou}" @tap="form.taitou=2">公司</view>
+							<view class="radio mr-20" :class="{'checked': !form.taitou}" @tap="form.taitou=0">个人</view>
+							<view class="radio" :class="{'checked': form.taitou}" @tap="form.taitou=1">公司</view>
 						</view>
 					</view>
 				</view>
