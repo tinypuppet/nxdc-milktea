@@ -209,7 +209,8 @@
             "style" : {
 				"navigationBarTitleText": "礼品卡列表",
 				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
+				"navigationBarBackgroundColor": "#ffffff",
+				"disableScroll": true
 			}
         }
     ],

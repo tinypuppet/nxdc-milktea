@@ -116,9 +116,9 @@
 				<view class="grid">
 					<view class="image">
 						<image src="/static/images/mine/stxy.png"></image>
-						<view class="badge">NEW</view>
 					</view>
 					<view>送她心愿</view>
+					<image :src="newIcon" class="new-badage"></image>
 				</view>
 				<view class="grid">
 					<view class="image">
@@ -172,6 +172,7 @@
 	export default {
 		data() {
 			return {
+				newIcon: 'https://img-shop.qmimg.cn/s16/images/2020/05/12/ffb0613dded704b6.png'
 			}
 		},
 		computed: {
@@ -450,29 +451,22 @@ page {
 			align-items: center;
 			margin-bottom: 40rpx;
 			width: 25%;
+			position: relative;
 			
 			.image {
-				position: relative;
-				
 				image {
 					width: 80rpx;
 					height: 80rpx;
 					margin-bottom: 20rpx;
 				}
-				
-				.badge {
-					position: absolute;
-					top: 0;
-					right: 0;
-					background-color: #F04B4B;
-					color: #FFFFFF;
-					font-size: 14rpx;
-					width: 1rem;
-					height: 1rem;
-					line-height: 1rem;
-					text-align: center;
-					border-radius: 100% 100% 100% 0;
-				}
+			}
+			
+			.new-badage {
+				width: 40rpx;
+				height: 40rpx;
+				position: absolute;
+				top: 0;
+				right: 30rpx;
 			}
 		}
 	}
