@@ -12,6 +12,7 @@ import attendanceList from './attendance-list'
 import todayAttendance from './today-attendance'
 import orders from './orders'
 import customerCoupons from './customer-coupons'
+import giftCards from './gift-cards'
 
 const json = {
 	packages,
@@ -27,7 +28,8 @@ const json = {
 	attendanceList,
 	todayAttendance,
 	orders,
-	customerCoupons
+	customerCoupons,
+	giftCards
 }
 
 export default (name) => new Promise(resolve => resolve(json[name]), 500)

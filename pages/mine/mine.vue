@@ -59,7 +59,7 @@
 						</view>
 						<view class="font-size-sm text-color-assist">余额</view>
 					</view>
-					<view class="user-grid">
+					<view class="user-grid" @tap="giftCards">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.giftBalance : '***' }}
 						</view>
@@ -275,6 +275,15 @@
 			services() {
 				uni.navigateTo({
 					url: '/pages/services/services'
+				})
+			},
+			giftCards() {
+				if(!this.isLogin) {
+					this.login()
+					return
+				}
+				uni.navigateTo({
+					url: '/pages/giftcard/giftcard'
 				})
 			}
 		}
