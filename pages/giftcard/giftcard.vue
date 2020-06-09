@@ -95,10 +95,12 @@
 </script>
 
 <style lang="scss" scoped>
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.tabbar {
-		z-index: 10;
-		position: fixed;
-		top: 0;
 		width: 100%;
 		height: 100rpx;
 		border-top: 1rpx solid $border-color;
@@ -131,8 +133,7 @@
 	}
 	
 	.swiper {
-		margin-top: 100rpx;
-		height: calc(100vh - 100rpx);
+		flex: 1;
 	}
 
 	.swiper-item-1 {
