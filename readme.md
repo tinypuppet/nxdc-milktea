@@ -42,6 +42,7 @@ uni-app插件市场地址:[https://ext.dcloud.net.cn/plugin?id=1807](https://ext
 	- 买茶送包
 	- 更多服务
 	- 开发票
+	- 礼品卡
 
 2. 所有数据都是静态的，保存在api文件夹下。
 
